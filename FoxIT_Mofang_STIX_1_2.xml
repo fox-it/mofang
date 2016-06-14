@@ -1,0 +1,1080 @@
+<stix:STIX_Package 
+	xmlns:AddressObj="http://cybox.mitre.org/objects#AddressObject-2"
+	xmlns:DomainNameObj="http://cybox.mitre.org/objects#DomainNameObject-1"
+	xmlns:FileObj="http://cybox.mitre.org/objects#FileObject-2"
+	xmlns:cybox="http://cybox.mitre.org/cybox-2"
+	xmlns:cyboxCommon="http://cybox.mitre.org/common-2"
+	xmlns:cyboxVocabs="http://cybox.mitre.org/default_vocabularies-2"
+	xmlns:foxit="http://stix.fox-it.com/fox-it"
+	xmlns:indicator="http://stix.mitre.org/Indicator-2"
+	xmlns:marking="http://data-marking.mitre.org/Marking-1"
+	xmlns:report="http://stix.mitre.org/Report-1"
+	xmlns:snortTM="http://stix.mitre.org/extensions/TestMechanism#Snort-1"
+	xmlns:stix="http://stix.mitre.org/stix-1"
+	xmlns:stixCommon="http://stix.mitre.org/common-1"
+	xmlns:stixVocabs="http://stix.mitre.org/default_vocabularies-1"
+	xmlns:tlpMarking="http://data-marking.mitre.org/extensions/MarkingStructure#TLP-1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:yaraTM="http://stix.mitre.org/extensions/TestMechanism#YARA-1" id="foxit:Package-626f45b2-8ed1-4290-9402-4dbb873ddddb" version="1.2">
+    <stix:Reports>
+        <stix:Report id="foxit:Report-2e550887-7705-4efe-9823-72e9723e360d" xsi:type='report:ReportType' version="1.0">
+            <report:Header>
+                <report:Title>Mofang Indicators</report:Title>
+                <report:Intent xsi:type="stixVocabs:ReportIntentVocab-1.0">Indicators</report:Intent>
+                <report:Handling>
+                    <marking:Marking>
+                        <marking:Controlled_Structure>//node() | //@*</marking:Controlled_Structure>
+                        <marking:Marking_Structure xsi:type='tlpMarking:TLPMarkingStructureType' color="WHITE"/>
+                    </marking:Marking>
+                </report:Handling>
+                <report:Information_Source>
+                    <stixCommon:Identity id="Fox-IT"/>
+                    <stixCommon:Time>
+                        <cyboxCommon:Produced_Time precision="day">2016-06-14T00:00:00</cyboxCommon:Produced_Time>
+                    </stixCommon:Time>
+                </report:Information_Source>
+            </report:Header>
+            <report:Indicators>
+                <report:Indicator id="foxit:indicator-1556edb4-ed03-4c55-bdbc-7c6d1296fa04" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c4204678-d2d6-4721-9a5a-217ad2b9a2a7">
+                        <cybox:Object id="foxit:Address-f95275af-2122-4bf8-bb76-16887f46577d">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>103.229.124.1</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-87f71181-43fd-44ee-ad04-1a27e4973e34" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c37b089f-ab72-4ac1-a569-46b5ebb1894c">
+                        <cybox:Object id="foxit:Address-977ebe50-fe9e-48b0-9210-65900ee1cb6d">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>103.39.78.131</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-5e645b5f-402f-49bc-b573-88fe5267c27b" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-8bdbce09-0d0c-4c63-82cd-0c340201607d">
+                        <cybox:Object id="foxit:Address-c4c38c97-6f07-4b02-b53b-17e1b0c787f4">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>107.191.61.105</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-b0dd243f-ec9f-4c64-80e9-94275d4f076f" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c2dace51-5db5-4039-9c7f-9dd9d1b0f77c">
+                        <cybox:Object id="foxit:Address-d327f4ac-31a3-4ed1-8a7c-96543a1bf4fd">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>112.213.117.52</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-9ee63e32-3069-4de2-8317-b9cbcabe0a2b" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-143933eb-3983-4eca-a759-8ee6b5998443">
+                        <cybox:Object id="foxit:Address-f101a503-04a1-40af-a340-c495b58daf32">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>116.251.210.77</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-2ea4fced-12bf-4392-9f55-e573f2361723" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-fe13a00a-929e-439b-8eb2-979846b258c0">
+                        <cybox:Object id="foxit:Address-8e085baa-0a1b-488d-91d8-80693d0f12dd">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>116.251.216.165</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-bbc07084-bc35-425c-bbbc-5275a35f8dc0" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-06fab936-b279-4d3a-8224-016351183c08">
+                        <cybox:Object id="foxit:Address-eb7b2780-f7d1-492d-ac77-227b79c069e9">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>116.251.216.227</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-c2a5557c-f670-46ec-b15f-037b51594a4d" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-d99abbab-81f4-4866-b3db-cba8e58276d0">
+                        <cybox:Object id="foxit:Address-ac0487b9-9daa-40a2-9664-981f962b3920">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>116.251.216.72</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-f91ac1b8-bc6c-4d58-81c9-9299292ddb28" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-0c65448c-da41-41df-be50-72dfe9dcdc78">
+                        <cybox:Object id="foxit:Address-7d35ed58-be0c-42a8-ae78-e1f3ea0432b5">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>116.251.219.142</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-3481cbae-82a3-4a95-925a-256db7ff6edb" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-80bac956-2c2b-46e4-b05e-2cee32dcf33a">
+                        <cybox:Object id="foxit:Address-b8aaf32b-2bd1-42b7-b791-ce231a1d47f0">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>117.17.10.10</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-1b699cdf-83dc-4ab1-a54c-e71e941859b9" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-48729630-4de1-48a9-ab88-28c57dd35579">
+                        <cybox:Object id="foxit:Address-92f7dfed-3611-48dd-ac58-b402bec6d3e6">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>151.236.14.53</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-d3b5913d-60b7-4288-b5e3-bb5f1ba9bbdf" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-9c7ed8a1-9f93-479c-9272-935e68025236">
+                        <cybox:Object id="foxit:Address-f2649b03-161e-4c13-827d-5374c3188faa">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>176.31.220.160</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-a02294c4-b37e-4709-9656-7eec618afad0" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-7cd65853-0b96-4f6d-887f-caa154395887">
+                        <cybox:Object id="foxit:Address-9b4e631b-ed6b-4282-ae4d-3c419943002a">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>178.209.51.164</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-26ac2557-0802-4955-aa28-75bb885132d1" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-af41ef81-020d-4252-8e46-13d6b9c15701">
+                        <cybox:Object id="foxit:Address-f17f6fab-211c-4d73-aefd-cd58ebaae5f3">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>178.209.52.72</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-bd3353cd-efa5-4182-8d66-dbbf066cd6d4" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-ebab5e04-0197-4c95-ae3e-4814d06be20b">
+                        <cybox:Object id="foxit:Address-483fbe44-64ac-4a83-8f33-8b1fb6c5cf8a">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>192.157.229.164</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-a7045a4c-b4c0-4f04-922c-610ed9f8123f" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-bc596f61-6050-4240-97b4-70fc9e20c8a9">
+                        <cybox:Object id="foxit:Address-f4b47067-9672-45cf-b117-055fd4ff656c">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>198.98.103.7</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-72afc956-1654-4d5f-9727-141b86c83c62" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-27c5d4fa-1fb6-4abe-a533-454e5e0a1749">
+                        <cybox:Object id="foxit:Address-c9c46599-26bf-47b7-b14e-e67afcae90b7">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>210.245.85.83</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-64e3c033-008a-4a16-922d-6dc4ba834570" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-78014085-b62f-4c2c-ab5d-9489489e1ce4">
+                        <cybox:Object id="foxit:Address-6f70bce8-38a4-4699-8380-962336922860">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>23.89.200.128</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-d4cdbca6-59f1-4770-9f32-736f1b62cbee" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-315976fb-3ec9-4533-bb42-16423ce28346">
+                        <cybox:Object id="foxit:Address-bc0e2173-075b-40b9-a34b-481e6442058d">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>23.89.201.173</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-488ea635-164a-40b5-86b9-4ced3a8c5027" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-fbbc185c-44b6-4863-b14a-b7c23bca0cad">
+                        <cybox:Object id="foxit:Address-d6aaa192-a567-483e-8bf4-3ef3000ba1f2">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>38.109.190.55</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-cb0666fe-a159-460d-b8cf-5b77652f830a" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-a2e01710-a010-4c84-9f19-d9d3dd7bbdd3">
+                        <cybox:Object id="foxit:Address-f78f5623-75bd-4d67-9447-f4332c21be7c">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>49.213.18.15</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-265022e3-f6bd-4b5d-a3fb-13239a25f339" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-eceec7d7-16c7-42d8-85c4-a6543c7d935e">
+                        <cybox:Object id="foxit:Address-2513c445-1fb0-4ade-8ada-4249b88876cd">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>50.117.47.66</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-3b4ff2a0-cafd-4b29-b4ab-58030a2a6c64" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-7819a743-4bdb-4522-982e-0ba5f8854ef4">
+                        <cybox:Object id="foxit:Address-93cb6a62-14c8-405b-9cd3-09902b830892">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>50.117.47.67</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-8dc08099-d5bc-4933-9fad-05c84eab81f8" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-9d7fc799-9352-4e18-a4f1-a3af3a7d1a6f">
+                        <cybox:Object id="foxit:Address-017caa93-5ceb-49dc-8a38-34dd27651940">
+                            <cybox:Properties xsi:type="AddressObj:AddressObjectType" category="ipv4-addr">
+                                <AddressObj:Address_Value>61.250.92.79</AddressObj:Address_Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-bdbbc252-28ad-41e2-b55d-ee43ba529a9b" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-90a47f01-4f16-445d-8cce-202b96a69abe">
+                        <cybox:Object id="foxit:DomainName-5decd2ba-ba0c-4387-b34d-793c49657e9e">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>video.today-nytimes.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-cf0ab192-9ac9-4057-b866-fbd893f587ff" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-86ac785c-f99c-4d8c-9323-509640c836fa">
+                        <cybox:Object id="foxit:DomainName-26badc39-c2ef-4e81-ae42-6a73f8d4d5c3">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>api.officeonlinetool.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-df2f2e4c-21ae-4584-9985-ec8eeb4dd81f" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-d1ac4a93-886f-41ec-86dd-10b459985294">
+                        <cybox:Object id="foxit:DomainName-990c13e8-a963-4e6b-a23f-ce7e72b7bc1b">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>ie.update-windows-microsoft.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-e809081d-9070-4618-b1a4-b9b8df5e4c31" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-14b0e72d-1783-4db5-bf22-6390a285053a">
+                        <cybox:Object id="foxit:DomainName-162cd0a3-c308-450a-9319-4cd2f0413f33">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>travel.tripmans.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-c61a14c0-befa-4ad1-9c0d-761c3ee7b6c5" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-f44d50db-0d75-4eab-86cd-d4595d198a5b">
+                        <cybox:Object id="foxit:DomainName-df2ae77f-79f1-4664-8b69-19c3150a4d94">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>dns.undpus.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-8e9c935c-7feb-476f-8884-fe9645a23b90" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-d1e8de37-c0d0-4604-b4eb-b278d4ad1fa6">
+                        <cybox:Object id="foxit:DomainName-88c89bbd-565c-4db4-a5fd-1045876767cf">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>secure2.sophosrv.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-d0f824d8-4239-43b3-b037-a2e21bd32acc" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-e15d99c6-d3e4-4015-8438-23cd5f4c57b9">
+                        <cybox:Object id="foxit:DomainName-aa2e4a4e-910f-4c8e-93d0-364b38338018">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>update.nfkllyuisyahooapis.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-a9929145-04fd-4124-a5a0-2e6d0ecbda08" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-5edda048-5981-4f39-a00c-cd1ac4c83f7c">
+                        <cybox:Object id="foxit:DomainName-f6bfa75e-4ede-4af3-bcf1-cd71de66ea98">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>www.go-gga.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-8ab499ab-17cd-4fa8-b987-0c6fd2372193" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-e459f46b-54ee-49bc-ba4d-847bc9323e03">
+                        <cybox:Object id="foxit:DomainName-401d5479-4af7-40fa-b6fe-32b31d26ade4">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>images.defexpoindia14.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-42775657-b943-4f0f-8a23-47b71608c005" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c1271a26-98ed-4e5e-b02a-ffbd83972396">
+                        <cybox:Object id="foxit:DomainName-4cf0e4f6-20b1-40f8-b82e-6e2f4d5ed961">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>update.micrdsoft.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-ea8c58d8-39b5-4695-bae6-842538dd1b82" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-0d5bf0e6-a152-4c01-bc1a-6910746fd05b">
+                        <cybox:Object id="foxit:DomainName-9bbe161d-2c5c-443f-b699-7fc9a67b31ca">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>support.f--secure.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-e01cc974-6539-4581-8312-c7505f392f33" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-4ea49de2-f34a-4efd-8163-cf4adb24a9d1">
+                        <cybox:Object id="foxit:DomainName-c4158c97-7a7f-473a-a54b-d02b9899dca3">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>store.outlook-microsoft.net</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-a56a8425-abbf-4621-8cbb-7daa38c91e3b" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-724837cf-9022-421a-b101-c0833756dd3c">
+                        <cybox:Object id="foxit:DomainName-103c044e-2d16-46d1-85fb-eaa986bcacc8">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>b.support.outlook-microsoft.net</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-0b9c5ad8-c1c1-4b4e-921b-5017c54bc69f" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-09acf22f-01c9-42b6-afe2-1c9cb8a8c09b">
+                        <cybox:Object id="foxit:DomainName-e97c3704-5e8f-4be6-919f-d9d6a66e66ff">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>logon.had-one-job.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-186b600f-9ea6-49f2-ab62-96a83035644a" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-f0d83b61-f843-488d-b44a-1ab6cb3197e9">
+                        <cybox:Object id="foxit:DomainName-2e75d18f-b90d-4bf8-9df4-7f1ed5039344">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>www.avgfree.us</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-949e2310-daaa-4cd5-a332-0c21dbc49a8a" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-e69ddd93-5b12-4d79-b9ee-34dcdfdf7ddc">
+                        <cybox:Object id="foxit:DomainName-a5059451-abdf-48c2-a063-f91b492cd505">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>mail.upgoogle.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-02c2f204-94c1-4f22-a085-e6aa57859d41" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-b997794a-a045-4f9a-acd1-8bc318bdbf1d">
+                        <cybox:Object id="foxit:DomainName-59a9f2df-64aa-4c94-a085-863aa77d6652">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>wbmail.city-library.com</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-134d3c22-6d51-4648-a21e-ca3d0f8f6d72" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-dc08b81c-6999-470d-9ab0-215a3cddf21d">
+                        <cybox:Object id="foxit:DomainName-941aa40c-4be3-4532-b17b-4efce39d45eb">
+                            <cybox:Properties xsi:type="DomainNameObj:DomainNameObjectType">
+                                <DomainNameObj:Value>library.cpgcorp.org</DomainNameObj:Value>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-560eb5ff-7fd6-4ddd-8278-10a8dff17150" xsi:type='indicator:IndicatorType'>
+                    <indicator:Test_Mechanisms>
+                        <indicator:Test_Mechanism xsi:type='snortTM:SnortTestMechanismType'>
+                            <snortTM:Rule><![CDATA[alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"FOX-SRT - Trojan - ShimRat check-in (Data)"; flow:established,to_server; content:"POST"; http_method; content:".php HTTP/1."; content:"|0d0a0d0a|Data$$"; fast_pattern:only; content:!"Content-Type"; content:!"Referer:"; content:!"Cookie:"; content:"|0d0a0d0a|"; pcre:"/Data\$\$\d\d/R"; content:"Data"; isdataat:!1,relative; threshold: type limit, track by_src, count 1, seconds 600; classtype:trojan-activity; reference:url,blog.fox-it.com/2016/06/15/mofang-a-politically-motivated-information-stealing-adversary/; sid:21001854; rev:4;)]]></snortTM:Rule>
+                        </indicator:Test_Mechanism>
+                    </indicator:Test_Mechanisms>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-32c9f1c5-3fb5-459b-9c31-56c0b2c2c06c" xsi:type='indicator:IndicatorType'>
+                    <indicator:Test_Mechanisms>
+                        <indicator:Test_Mechanism xsi:type='snortTM:SnortTestMechanismType'>
+                            <snortTM:Rule><![CDATA[alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"FOX-SRT - Trojan - ShimRat check-in (php)"; flow:established,to_server; content:"POST"; http_method; content:".php HTTP/1."; content:"|0d0a0d0a|php"; fast_pattern:only; content:!"Content-Type"; content:!"Referer:"; content:!"Cookie:"; threshold: type limit, track by_src, count 1, seconds 600; classtype:trojan-activity; reference:url,blog.fox-it.com/2016/06/15/mofang-a-politically-motivated-information-stealing-adversary/; sid:21001855; rev:4;)]]></snortTM:Rule>
+                        </indicator:Test_Mechanism>
+                    </indicator:Test_Mechanisms>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-8551a1ae-6495-47bb-ad20-db5bbd356f66" xsi:type='indicator:IndicatorType'>
+                    <indicator:Test_Mechanisms>
+                        <indicator:Test_Mechanism xsi:type='snortTM:SnortTestMechanismType'>
+                            <snortTM:Rule><![CDATA[alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"FOX-SRT - Trojan - ShimRat check-in (Yuok)"; flow:established,to_server; content:"POST"; http_method; content:".php HTTP/1.1|0d0a|User-Agent: "; fast_pattern:only; content:!"Content-Type"; content:!"Referer:"; content:!"Cookie:"; content:"|0d0a0d0a|"; pcre:"/(php)?Yuok\$\$\d\d/R"; content:"Yuok"; isdataat:!1,relative; threshold: type limit, track by_src, count 1, seconds 600; classtype:trojan-activity; reference:url,blog.fox-it.com/2016/06/15/mofang-a-politically-motivated-information-stealing-adversary/; sid:21001856; rev:4;)]]></snortTM:Rule>
+                        </indicator:Test_Mechanism>
+                    </indicator:Test_Mechanisms>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-a160de83-e96b-4262-b24c-10bf3d0a4bf2" xsi:type='indicator:IndicatorType'>
+                    <indicator:Test_Mechanisms>
+                        <indicator:Test_Mechanism xsi:type='snortTM:SnortTestMechanismType'>
+                            <snortTM:Rule><![CDATA[alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (msg:"FOX-SRT - Trojan - ShimRatReporter check-in"; content:"POST"; http_method; content:"Accept-Encoding: utf-8|0d0a|"; fast_pattern; uricontent:".php?filename="; content:"Accept: */*"; content:!"Referer"; content:!"Content-Type"; threshold: type limit, track by_src, count 1, seconds 600; classtype:trojan-activity; reference:url,blog.fox-it.com/2016/06/15/mofang-a-politically-motivated-information-stealing-adversary/; sid:21001857; rev:4;)]]></snortTM:Rule>
+                        </indicator:Test_Mechanism>
+                    </indicator:Test_Mechanisms>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-32873f0c-0fea-468e-8047-9580947f5118" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-d6a89761-bc72-4598-9e8f-abc7b6fbd6e9">
+                        <cybox:Object id="foxit:File-62bf3ed6-58d1-486d-a688-36a89910f7a7">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>558461b6fb0441e7f70c4224963490ea49f44d40c5700a4c7fd19be4c62b3d6a</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-ca6afcf3-6919-4ccc-8e1e-b2d4629110e0" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-cdcf9bae-b5a3-4a6d-b503-6d0aef2b8b8e">
+                        <cybox:Object id="foxit:File-a608d2a3-4b1d-406a-b25f-72c203c62392">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>a835baa7ffc265346443b5d6f4828d7221594bd91be8afc08152f3d68698b672</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-d5c97db8-037e-424f-bd2a-2f4e3d29caa1" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-f5908f2d-34f2-4e3d-b552-4b93e5b5ab41">
+                        <cybox:Object id="foxit:File-bce15a5b-4397-4fd4-8eb1-9576ded32147">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>2653ecc3ea17e0d5613ddebe76bdddea6c108713330b0bd8e68d2d5141a4a07d</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-054ece5e-5cf0-4138-921d-98e5891ae7a8" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-8ed6e315-6a3c-4e30-a5f9-b6a3d8a991a7">
+                        <cybox:Object id="foxit:File-484828db-b7bc-49be-8230-5534de050212">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>2d40ca005a7df46b3f7c691006c9951fc3bee25bb4fa4a0ebbdee76d7d117fdf</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-8b09a0d0-e193-47da-bbb2-21bb0bd73646" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-dac1e9eb-0c0b-4b06-ac4d-88f4203ddd11">
+                        <cybox:Object id="foxit:File-29dadd28-92c8-4ee5-91e7-9d4a9b34590f">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>af67df976fb941c99f4d3dd948ed4828a445dd6f9c98ffc2070c8be76c60484d</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-d34716e8-a21b-4c1d-ae06-d35646fbb800" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-4234cb89-3190-48d2-8004-b473b9b69b6c">
+                        <cybox:Object id="foxit:File-f0d0891d-3a26-4397-acf2-96bc8e5064fd">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>e5bcb55d7881b3b367521532af173e85d1eee66badf89586168d22ed17bc25b2</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-de69cbcf-de28-4b61-9db6-b9465e6d3454" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c0fff856-60fe-46a3-9bf7-584aab88a41a">
+                        <cybox:Object id="foxit:File-2f89a9d8-8946-45dd-91e9-6c94bf726e0a">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>d834e70a524a87945f7a8880b78f5e10460c1d2b60f3e487cb6f05c8221aa4f8</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-0c159906-1fd8-4040-a7fc-ba33f973150a" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c1f5b750-d508-4846-905b-a11a0899b40b">
+                        <cybox:Object id="foxit:File-10f9c153-62b8-4472-b6b5-3b977b90cae0">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>0cc1660e384683f2147e02ff76c69822ee2b98433c3a3613bbd28b9d8258da38</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-99ec57cd-0e0d-40d3-90d9-788572ba4638" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-342a8b80-9017-453e-aaa1-4eba27043745">
+                        <cybox:Object id="foxit:File-7da9ccf1-f429-4db1-adf2-6e37c3051e93">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>f71025d47105dcd674a0b9ef0c83a83854ba20cb0eb8168da36a7908d150e44f</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-6ccc7c5b-6c7e-4c1d-ad1a-f3c30b08b095" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-e1a83818-b9ee-43b6-adb7-87f52620647c">
+                        <cybox:Object id="foxit:File-3878c86f-4fbe-4e1c-b6b4-a7009c2412f7">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>5dc3f4a067ae125f99fa90844bba667235ec7ef667353e282ff29712dda5b71c</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-0b10da85-ede4-49b8-832e-6ebf105b2da7" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-e46d511f-8b80-4d09-ad2f-2c9df31e815b">
+                        <cybox:Object id="foxit:File-0f323762-c85f-410a-8a66-89c7b5bfe944">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>8ee3fc5ccef751e098c4e64b36e8b5c95dc48473ac83380b59d10ea32f9946f9</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-bafd040e-3737-482d-8e30-b95a24c2cf88" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-fb7a44b0-24ba-4c4e-b0c7-b6622063d55c">
+                        <cybox:Object id="foxit:File-d2763e88-e51b-42e3-b883-130bc51a2d0c">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>35589ce27c27dd4407a79540f32031d752b774b4bd6b8a3687e19a177ae6b18b</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-31e55668-1e08-4e01-807e-dff4ddb62f2e" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-5ce44214-f032-47ce-8f66-e93272dcc984">
+                        <cybox:Object id="foxit:File-a39f55c4-6f7d-48f1-8dee-f64fddab6371">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>36422e6ccaa50a9ecceb7fb709a9e383552732525cb579f8438237d87aaf8377</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-5ae6ba67-5b72-4242-a4a5-dea370eca5f8" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-f47e42e5-b349-438b-bb12-a37fb834e868">
+                        <cybox:Object id="foxit:File-b98e3cca-fafa-4dc6-b1d2-dde6f45f5e44">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>3c5c4d68d0fa6520637fb4afe6a7097ec7d0f1d6a738bb0064bb009ea6344e8d</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-61f00d7f-08c0-4961-95a1-823bf461761a" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-b3d1b9f2-e014-4cc6-9c68-c69c4b0d53e6">
+                        <cybox:Object id="foxit:File-9d5b646c-dce7-426b-8442-227156a64058">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>a03bd56eeee9f376eb59c6f4d19bf8a651eeb57bb4ebb7f884192b22a6616e68</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-4f538be8-765c-40cf-ba33-75d6d2eeb466" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-2f61e3d1-c230-4ec4-beb7-9a33f76a9c24">
+                        <cybox:Object id="foxit:File-af603c26-9a71-49ab-a5ea-61ea33c395d8">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>b53b27bb3e9d02e3ec5404cf3e67debb90d9337dbb570ca8b8cfce1054428466</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-8d37318e-f752-4d3b-9882-ba8946303446" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c124e508-dc49-4478-90d0-efa026e0358d">
+                        <cybox:Object id="foxit:File-f3a7b0a3-110f-44d3-a0e2-d820d7e48a8a">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>ba0057a1b132ec16559efc832941455cc07f34c434da2a7434f73f1d2141bebf</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-34366d05-5d4e-42c5-aa87-9d04a718ffb8" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-46a83e3f-2d75-4e23-b9a0-9155e19c87b2">
+                        <cybox:Object id="foxit:File-76a2bd4e-62a4-4e2b-bdc5-06d52a021aa7">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>2b111e287d356ac4561ba4f56135b7c1361b7da32e5825028a5e300e44b05579</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-5b38cc4f-52c8-4675-876c-26f8c2e16675" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-2920fd25-90de-466a-8895-997ec13763b3">
+                        <cybox:Object id="foxit:File-e14a1c78-237a-4e4f-885e-8aa1b0d65a19">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>029e735581c38d66f03aa0e9d1c22959b0bc8dfe298b9e91b127c42c7f904b5e</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-5ea95fcf-be38-445e-be56-57b6c68add93" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-d9b28a0e-1296-4f68-956d-fc6fee645c29">
+                        <cybox:Object id="foxit:File-7163062b-bf73-45c1-950c-db0dfcd4f5dc">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>15b9c033b49a5328ddb06997a817af55469aaf6bc3911de030e6f5ad845160bc</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-5f63b5bc-8765-437b-afbb-a5c8bc42504f" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c9cbb375-b77d-472c-9821-5a8bf03e9f24">
+                        <cybox:Object id="foxit:File-7dd376d2-551c-47c1-b3ed-468dfd593cd0">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>33b288455c12bf7678fb5fd028ff3d42fcaf33cf833a147cb7f0f89f7dad0d8f</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-fd95af24-ff8a-4260-bbb2-763b10b47bb4" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-eb2daa63-448a-484e-89f5-db21d0dfa033">
+                        <cybox:Object id="foxit:File-ac65d401-6327-4ae3-b3d6-8f223e47e976">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>eb2d3c9e15b189dd02f753f805e90493254e17d40db6f1228a4e4095c5f260c1</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-21501a67-3160-4568-92b0-7fba172281ca" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-65533d0b-e880-4bd5-b06a-7bf9bf87ac8c">
+                        <cybox:Object id="foxit:File-88001a88-8eb9-4f62-aadb-822d096875fd">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>5da5a5643e32d6200567768e6112d4d3161335d8d7a6dd48f02bf444fe98aab3</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-5cc118a9-d28f-4eea-b48f-a45fed28da7d" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-83dd1c65-7b4f-41c4-a287-32ac29a01197">
+                        <cybox:Object id="foxit:File-fa7bce71-c8f7-4eee-8b79-02d1ed8b0826">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>241c66bb54bd27afeb4805aa8a8045155b81c8cd7093dde7ef19273728f502eb</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-c8f315c2-6ea5-48a5-bdaf-55dc827b123d" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c39ab04a-acf4-4198-a5c2-32c6e8ef23b1">
+                        <cybox:Object id="foxit:File-889dc994-9e07-4eee-93a4-55884f43c95f">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>577622fbf0a7bebc60844df808e75eef81a3d62ec6943f80168ac0d5ef39de5c</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-bf99c716-a865-45eb-896b-a150058f60e8" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-1e908165-5580-48b6-abbd-27cd86066dc7">
+                        <cybox:Object id="foxit:File-05f6d9f1-d3d3-4069-b75b-ce5504ab87f0">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>d2d4723f8c3bba910cade05c9ecea00cdcc647d42232bccc610d066792a95b15</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-e0bf1225-4032-439c-9303-3422ea6ad5be" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-0d21374b-eaa8-4aba-a674-6e695c24e1ac">
+                        <cybox:Object id="foxit:File-9f17cdfa-1d80-45a1-9f9f-4f05ab1af369">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>dae17755e106be27ea4b97120906c46d4fcbb14cc8d9fc2c432f4c0cc74bb3fb</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-36745ea0-daf0-4226-94e7-f8a214cd9156" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-cd12f3a1-5385-4020-86e4-9d22f5b13e96">
+                        <cybox:Object id="foxit:File-1d999493-13bf-475d-bbcb-0553e23b941e">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>23132f4dfd4cb8abe11af1064e4930bc36a464d1235f43bad4ff20708babcc34</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-97f5dd7e-4560-4c8b-94f6-3479bf8c472f" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-4b179d72-2b13-4018-8383-bad109fe83e0">
+                        <cybox:Object id="foxit:File-be285df4-e821-4525-bfde-dc8175abc7e9">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>fa28559a4e0e920b70129cea95a98da9a409eaa093c63f341a7809692b31e723</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-989554ec-f89b-4b3b-a486-77af3fe8ed03" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c8743ae6-3fec-43a2-a85d-365d37c1b3d8">
+                        <cybox:Object id="foxit:File-98aa98e9-4ac7-477f-b05a-681c95ef7b8f">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>234d62ffd83c3972a32e89685787ff3aab4548cd16e4384c3c704a059ef731ce</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-b22d8ade-aa8d-439b-9b81-103f751d630c" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-ec447e6e-6c8c-4be7-ac2f-7ad1a925431f">
+                        <cybox:Object id="foxit:File-017bd98c-ab32-461f-9e66-b8b865a14e88">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>e01aae93f68a84829fd8c0bc5ae923897d32af3a1d78623839fcfd18c99627cc</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-7a5ec8ce-3c71-41ea-a2c7-11ac59e0c964" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-d23edd25-a863-4cdc-85a4-6b0f46e1b7d9">
+                        <cybox:Object id="foxit:File-e474ea94-2ac6-40f4-91f3-9910b204de96">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>2a1a0d8d81647c321759197a15f14091ab5e76b913eb2d7d28c6bb053166d882</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-a2b0c54b-cb19-4139-a9e4-a725b0efb8af" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-eb45827f-fb33-41ec-81a4-94b45b9f770e">
+                        <cybox:Object id="foxit:File-3409d019-4d68-478e-b2bd-95148f4e48f9">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>6882664f1d0eb8c8cf61bdd16494380d34b6207455638342c6c3a7eef1ed9197</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-f6010279-6173-41a5-84c5-9f27fa3db1fc" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-d93b666a-00d9-45fa-a877-161b01d99c5f">
+                        <cybox:Object id="foxit:File-599df1e6-bcb0-4246-aa7f-d425076c7721">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>1922273bb36ab282e3b7846f1bb2802f5803bde66078fa996e44b84d0265675f</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-fdbd27ce-e9b1-47ba-8946-32c17d276bfe" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-74e4c2ee-6d36-496a-96cb-f70c8cc18bdc">
+                        <cybox:Object id="foxit:File-d615b965-ab33-44f7-abd1-9b5d2cea2fca">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>558461b6fb0441e7f70c4224963490ea49f44d40c5700a4c7fd19be4c62b3d6a</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-3ec29352-2e07-4fc2-956f-778474503c33" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-5815a3d2-8206-4249-a31e-163393822c9d">
+                        <cybox:Object id="foxit:File-10af47fc-40cb-4ba2-8172-53304f5fbfc2">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>1ca75e9b1761e15968d01a6e4f0a9f6ce47ba7ee4047d1533fb838f0f6ab28e2</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-84daefc8-dfb2-4ff6-b71f-45378de579eb" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-c38688cc-5737-49e1-8a54-283bcce116fc">
+                        <cybox:Object id="foxit:File-06b0218f-8653-4eef-8342-1fb4b88d3176">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>b7edbe6aee1896a952fcce2305c2bb7d8e77162bb45e305c64c7f8c9f63b3ab5</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-079409bd-d984-4e47-af4d-3d9546621dff" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-a80e9796-9d47-4ecc-bc91-1e16b225b444">
+                        <cybox:Object id="foxit:File-6f4bb6cd-e23c-4881-b4f8-70edc3dc3946">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>ac3b42453fac93e575988ba73ab24311515b090d57b1ad9f27dcbae8363f2d99</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-91d847ec-2a8f-487b-ab7b-eccf121fc4ba" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-6e47b652-985c-4497-a3e6-8e6dc3f6d8c6">
+                        <cybox:Object id="foxit:File-cb0c5414-d5fb-48c3-91d8-6a439534e16f">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>0741a18bfd79dac1fb850a7d4fcc62098c43fb0c803df6cd9934e82a1362dd07</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-aa3ca789-c75b-4f6e-ac16-22cb253a8c8c" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-beb3c8cf-3985-44b2-9119-97b796cf804f">
+                        <cybox:Object id="foxit:File-89e9f3cd-c231-49e9-8596-f001304abfb7">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>722f41aa2c7d670364b7a9bb683a0025aef5893b34af67873972cdaf09490ad2</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-9e7655ec-7f70-421f-b266-f4e1d65b2317" xsi:type='indicator:IndicatorType'>
+                    <indicator:Observable id="foxit:Observable-74926ae4-fe77-4237-a680-dbbcf8a07a59">
+                        <cybox:Object id="foxit:File-2045307c-87eb-4037-bf39-e2e275ea8015">
+                            <cybox:Properties xsi:type="FileObj:FileObjectType">
+                                <FileObj:Hashes>
+                                    <cyboxCommon:Hash>
+                                        <cyboxCommon:Type xsi:type="cyboxVocabs:HashNameVocab-1.0">SHA256</cyboxCommon:Type>
+                                        <cyboxCommon:Simple_Hash_Value>7deb75e95e8e22c6abb3b33c00b47a93122b8c744e8f66affd9748292e5a177f</cyboxCommon:Simple_Hash_Value>
+                                    </cyboxCommon:Hash>
+                                </FileObj:Hashes>
+                            </cybox:Properties>
+                        </cybox:Object>
+                    </indicator:Observable>
+                </report:Indicator>
+                <report:Indicator id="foxit:indicator-93e7485c-8f98-4c5b-b8e4-d289cfcce1b7" xsi:type='indicator:IndicatorType'>
+                    <indicator:Test_Mechanisms>
+                        <indicator:Test_Mechanism xsi:type='yaraTM:YaraTestMechanismType'>
+                            <yaraTM:Rule><![CDATA[rule shimrat
+{
+ meta:
+  description = "Detects ShimRat and the ShimRat loader"
+  author = "Yonathan Klijnsma (yonathan.klijnsma@fox-it.com)"
+  date = "20/11/2015"
+  
+ strings:
+  $dll = ".dll"
+  $dat = ".dat"
+  $headersig = "QWERTYUIOPLKJHG"
+  $datasig = "MNBVCXZLKJHGFDS"
+  $datamarker1 = "Data$$00"
+  $datamarker2 = "Data$$01%c%sData"
+  $cmdlineformat = "ping localhost -n 9 /c %s > nul"
+  $demoproject_keyword1 = "Demo"
+  $demoproject_keyword2 = "Win32App"
+  $comspec = "COMSPEC"
+  $shim_func1 = "ShimMain"
+  $shim_func2 = "NotifyShims"
+  $shim_func3 = "GetHookAPIs"
+
+
+ condition:
+  ($dll and $dat and $headersig and $datasig) or ($datamarker1 and $datamarker2) or ($cmdlineformat and $demoproject_keyword1 and $demoproject_keyword2 and $comspec) or ($dll and $dat and $shim_func1 and $shim_func2 and $shim_func3)
+}
+
+rule shimratreporter
+{
+ meta:
+  description = "Detects ShimRatReporter"
+  author = "Yonathan Klijnsma (yonathan.klijnsma@fox-it.com)"
+  date = "20/11/2015"
+
+ strings:
+  $IpInfo = "IP-INFO"
+  $NetworkInfo = "Network-INFO"
+  $OsInfo = "OS-INFO"
+  $ProcessInfo = "Process-INFO"
+  $BrowserInfo = "Browser-INFO"
+  $QueryUserInfo = "QueryUser-INFO"
+  $UsersInfo = "Users-INFO"
+  $SoftwareInfo = "Software-INFO"
+  $AddressFormat = "%02X-%02X-%02X-%02X-%02X-%02X"
+  $proxy_str = "(from environment) = %s"
+
+  $netuserfun = "NetUserEnum"
+  $networkparams = "GetNetworkParams"
+
+ condition:
+  all of them
+}]]></yaraTM:Rule>
+                        </indicator:Test_Mechanism>
+                    </indicator:Test_Mechanisms>
+                </report:Indicator>
+            </report:Indicators>
+        </stix:Report>
+    </stix:Reports>
+</stix:STIX_Package>
+
